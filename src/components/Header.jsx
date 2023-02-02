@@ -4,9 +4,9 @@ import Hero from "./Hero";
 function Header() {
   return (
     <div>
-      Header
+      Nav
       {/* <Nav /> */}
-      <Hero />
+
     </div>
   );
 }
