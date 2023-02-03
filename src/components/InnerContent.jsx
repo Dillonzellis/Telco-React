@@ -1,9 +1,16 @@
 import React from "react";
+import Container from "./Container";
 
 function InnerContent() {
   return (
     <div>
-      <div className="container mx-auto px-8"></div>
+      <Container
+        content={
+          <div className="">
+            <div className="">inner content</div>
+          </div>
+        }
+      />
     </div>
   );
 }
