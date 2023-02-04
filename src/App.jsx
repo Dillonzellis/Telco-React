@@ -1,6 +1,9 @@
+import liItems from "./components/data/checkingLiItems";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import InnerContent from "./components/InnerContent";
+
+import checkingLiItems from "./components/data/checkingLiItems";
 
 function App() {
   return (
@@ -17,7 +20,7 @@ function App() {
           "https://dev3.growthbydesign.org/wp-content/uploads/2022/11/checking-hero.png"
         }
       />
-      <InnerContent />
+      <InnerContent liItems={checkingLiItems} />
     </div>
   );
 }

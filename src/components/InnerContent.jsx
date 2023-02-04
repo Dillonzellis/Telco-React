@@ -1,8 +1,9 @@
 import React from "react";
 import Container from "./Container";
 import SecondaryHeading from "./SecondaryHeading";
+import StyledList from "./StyledList";
 
-function InnerContent() {
+function InnerContent({ liItems }) {
   return (
     <div>
       <Container
@@ -10,6 +11,11 @@ function InnerContent() {
           <div className="">
             <SecondaryHeading headingText="secondary heading text" />
             <div className="">inner content</div>
+            <StyledList
+              liItems={liItems.map((item) => {
+                return <li>{item}</li>;
+              })}
+            />
           </div>
         }
       />
