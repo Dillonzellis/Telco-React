@@ -14,7 +14,7 @@ function Hero({
   btnLink,
 }) {
   return (
-    <div className="bg-primary-400">
+    <div className="[ hero ] bg-primary-400">
       <Container
         content={
           <div className="grid grid-cols-2 gap-12 py-12 font-medium text-slate-50">

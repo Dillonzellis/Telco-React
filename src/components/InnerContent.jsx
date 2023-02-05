@@ -3,19 +3,25 @@ import Container from "./Container";
 import SecondaryHeading from "./SecondaryHeading";
 import StyledList from "./StyledList";
 
-function InnerContent({ liItems }) {
+function InnerContent({ imgLeft, headingText, liItems, imgSrc }) {
   return (
-    <div>
+    <div className="[ innerContent ]">
       <Container
         content={
-          <div className="">
-            <SecondaryHeading headingText="secondary heading text" />
-            <div className="">inner content</div>
-            <StyledList
-              liItems={liItems.map((item) => {
-                return <li>{item}</li>;
-              })}
-            />
+          <div className="grid grid-cols-2 gap-12 py-12">
+            <div className="[ content-col ] grid gap-y-4">
+              <SecondaryHeading headingText={headingText} />
+              {liItems && (
+                <StyledList
+                  liItems={liItems.map((item) => {
+                    return <li>{item}</li>;
+                  })}
+                />
+              )}
+            </div>
+            <div className="[ img-col ]">
+              {imgSrc && <img src={imgSrc} alt="" srcset="" />}
+            </div>
           </div>
         }
       />

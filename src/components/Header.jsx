@@ -12,7 +12,7 @@ function Header() {
           <Link to={`/`} className="text-xl font-bold">
             Checking
           </Link>
-          <Link to={`products`} className="text-xl font-bold">
+          <Link to={`/products`} className="text-xl font-bold">
             Products
           </Link>
         </div>

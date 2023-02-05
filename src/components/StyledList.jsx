@@ -2,9 +2,9 @@ import React from "react";
 
 function StyledList({ liItems }) {
   return (
-    <div>
-      <ul>{liItems}</ul>
-    </div>
+    <>
+      <ul className="grid gap-y-2">{liItems}</ul>
+    </>
   );
 }
 
