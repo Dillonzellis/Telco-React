@@ -7,8 +7,11 @@ function Header() {
   return (
     <Container
       content={
-        <div className="py-4">
+        <div className="flex gap-4 py-4">
           {/* <Nav /> */}
+          <Link to={`/`} className="text-xl font-bold">
+            Checking
+          </Link>
           <Link to={`products`} className="text-xl font-bold">
             Products
           </Link>
