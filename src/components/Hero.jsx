@@ -19,7 +19,7 @@ function Hero({
         content={
           <div className="grid grid-cols-2 gap-12 py-12 font-medium text-slate-50">
             <div className="[ content-col ] grid gap-y-4">
-              {subheading ? (
+              {subheading && (
                 <div className="[ sub-wrapper ] flex items-center">
                   <img
                     className="mr-2"
@@ -28,11 +28,11 @@ function Hero({
                   />
                   <div className="text-xl">{subheading}</div>
                 </div>
-              ) : null}
+              )}
               <PrimaryHeading headingText={headingText} />
               <p>{body}</p>
-              {body2 ? <p>{body2}</p> : null}
-              {btnText ? <Button btnText={btnText} btnLink={btnLink} /> : null}
+              {body2 && <p>{body2}</p>}
+              {btnText && <Button btnText={btnText} btnLink={btnLink} />}
             </div>
             <div className="[ img-col ] mx-auto">
               <img
