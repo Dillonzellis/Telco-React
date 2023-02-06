@@ -8,20 +8,45 @@ function InnerContent({ imgLeft, headingText, liItems, imgSrc }) {
     <div className="[ innerContent ]">
       <Container
         content={
-          <div className="grid grid-cols-2 gap-12 py-12">
-            <div className="[ content-col ] grid gap-y-4">
-              <SecondaryHeading headingText={headingText} />
-              {liItems && (
-                <StyledList
-                  liItems={liItems.map((item) => {
-                    return <li>{item}</li>;
-                  })}
-                />
-              )}
-            </div>
-            <div className="[ img-col ]">
-              {imgSrc && <img src={imgSrc} alt="" srcset="" />}
-            </div>
+          <div className="grid grid-cols-2 items-center gap-12 py-12">
+            {imgLeft ? (
+              <>
+                <div className="[ img-col ]">
+                  {imgSrc && <img src={imgSrc} alt="" srcset="" />}
+                </div>
+                <div className="[ content-col ]">
+                  <div className="grid gap-y-4">
+                    <SecondaryHeading headingText={headingText} />
+                    {liItems && (
+                      <StyledList
+                        liItems={liItems.map((item) => {
+                          return <li>{item}</li>;
+                        })}
+                      />
+                    )}
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="[ content-col ]">
+                  <div className="grid gap-y-4">
+                    <SecondaryHeading headingText={headingText} />
+                    {liItems && (
+                      <StyledList
+                        liItems={liItems.map((item) => {
+                          return <li>{item}</li>;
+                        })}
+                      />
+                    )}
+                  </div>
+                </div>
+
+                <div className="[ img-col ]">
+                  {imgSrc && <img src={imgSrc} alt="" srcset="" />}
+                </div>
+              </>
+            )}
           </div>
         }
       />

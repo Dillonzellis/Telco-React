@@ -20,11 +20,16 @@ function Checking() {
         }
       />
       <InnerContent
-        imgLeft={true}
+        imgLeft={false}
         headingText="Great features of Telco Plus Checking Accounts!"
         liItems={checkingLiItems}
       />
-      <InnerContent />
+      <InnerContent
+        imgLeft={true}
+        headingText="Why Rewards Plus Checking?"
+        liItems={checkingLiItems}
+        imgSrc="https://dev3.growthbydesign.org/wp-content/uploads/2022/11/rewards-checking.png"
+      />
     </div>
   );
 }
