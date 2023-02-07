@@ -1,8 +1,8 @@
 import React from "react";
 import Button from "./Button";
-import Container from "./Container";
+import Container from "./layout/Container";
 
-import PrimaryHeading from "./PrimaryHeading";
+import PrimaryHeading from "./headings/PrimaryHeading";
 
 function Hero({
   headingText,

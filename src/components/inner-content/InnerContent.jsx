@@ -1,9 +1,9 @@
 import React from "react";
-import Container from "./Container";
-import ContentColTest from "./ContentColTest";
 import ImgCol from "./ImgCol";
+import Container from "../layout/Container";
+import ContentCol from "./ContentCol";
 
-function InnerContentTest({ content, imgLeft, imgSrc }) {
+function InnerContent({ content, imgLeft, imgSrc }) {
   return (
     <div className="[ innerContent ]">
       <Container
@@ -12,11 +12,11 @@ function InnerContentTest({ content, imgLeft, imgSrc }) {
             {imgLeft ? (
               <>
                 <ImgCol imgSrc={imgSrc} />
-                <ContentColTest content={content} />
+                <ContentCol content={content} />
               </>
             ) : (
               <>
-                <ContentColTest content={content} />
+                <ContentCol content={content} />
                 <ImgCol imgSrc={imgSrc} />
               </>
             )}
@@ -27,4 +27,4 @@ function InnerContentTest({ content, imgLeft, imgSrc }) {
   );
 }
 
-export default InnerContentTest;
+export default InnerContent;

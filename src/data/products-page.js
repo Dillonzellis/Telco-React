@@ -4,3 +4,7 @@ export const hero = {
   imgSrc:
     "https://dev3.growthbydesign.org/wp-content/uploads/2023/01/products-hero.png",
 };
+
+export const audioRes ={
+  
+}

@@ -1,15 +1,8 @@
 import React from "react";
-import ContentColTest from "../components/ContentColTest";
-
-import checkingLiItems from "../components/data/checkingLiItems";
-import Header from "../components/Header";
 import Hero from "../components/Hero";
-import InnerContent from "../components/InnerContent";
+import Header from "../components/layout/Header";
 
-import {
-  plusChecking,
-  rewardsChecking,
-} from "../components/data/checkingContentCol";
+import { plusChecking, rewardsChecking } from "../data/checkingContentCol";
 
 function Checking() {
   return (
@@ -26,7 +19,7 @@ function Checking() {
           "https://dev3.growthbydesign.org/wp-content/uploads/2022/11/checking-hero.png"
         }
       />
-      <InnerContent
+      {/* <InnerContent
         headingText="Great features of Telco Plus Checking Accounts!"
         liItems={checkingLiItems}
       />
@@ -40,9 +33,7 @@ function Checking() {
         headingText="Plus Checking"
         liItems={checkingLiItems}
         imgSrc="https://dev3.growthbydesign.org/wp-content/uploads/2023/01/pls-checking.jpg"
-      />
-      <ContentColTest content={plusChecking} />
-      <ContentColTest content={rewardsChecking} />
+      /> */}
     </div>
   );
 }
