@@ -2,8 +2,6 @@ import React from "react";
 import Container from "./Container";
 import ContentCol from "./ContentCol";
 import ImgCol from "./ImgCol";
-import SecondaryHeading from "./SecondaryHeading";
-import StyledList from "./StyledList";
 
 function InnerContent({ imgLeft, headingText, liItems, imgSrc }) {
   return (
