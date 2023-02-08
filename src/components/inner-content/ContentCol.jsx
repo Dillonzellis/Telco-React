@@ -13,19 +13,15 @@ function ContentCol({ content, dangerous }) {
             {item.secondaryHeading && (
               <SecondaryHeading headingText={item.secondaryHeading} />
             )}
-            {/* (dangerous ? () : () ) */}
             {item.liItems && (
               <StyledList
-                liItems={item.liItems.map((li) => (
-                  <li
-                    dangerouslySetInnerHTML={{
-                      __html: li.replace(
-                        /(<a.+<\/a>)/g,
-                        (_, match) => `${match}`
-                      ),
-                    }}
-                  />
-                ))}
+                liItems={item.liItems.map((li) =>
+                  dangerous ? (
+                    <li dangerouslySetInnerHTML={{ __html: li }} />
+                  ) : (
+                    <li>{li}</li>
+                  )
+                )}
               />
             )}
           </>
@@ -34,4 +30,5 @@ function ContentCol({ content, dangerous }) {
     </div>
   );
 }
+
 export default ContentCol;
