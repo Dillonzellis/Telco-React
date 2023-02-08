@@ -1,12 +1,9 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Header from "../components/layout/Header";
-import { plusChecking, rewardsChecking } from "../data/checkingContentCol";
 
 import InnerContent from "../components/inner-content/InnerContent";
 import { audioRes, hero } from "../data/products-page";
-
-// const heroItem = hero[0];
 
 function Products() {
   return (

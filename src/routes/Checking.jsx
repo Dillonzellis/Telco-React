@@ -2,8 +2,6 @@ import React from "react";
 import Hero from "../components/Hero";
 import Header from "../components/layout/Header";
 
-import { plusChecking, rewardsChecking } from "../data/checkingContentCol";
-
 function Checking() {
   return (
     <div className="[ checking ]">
