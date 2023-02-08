@@ -4,7 +4,7 @@ import Header from "../components/layout/Header";
 import { plusChecking, rewardsChecking } from "../data/checkingContentCol";
 
 import InnerContent from "../components/inner-content/InnerContent";
-import { hero } from "../data/products-page";
+import { audioRes, hero } from "../data/products-page";
 
 // const heroItem = hero[0];
 
@@ -17,7 +17,7 @@ function Products() {
         body={hero.body}
         imgSrc={hero.imgSrc}
       />
-      <InnerContent content={rewardsChecking} />
+      <InnerContent content={audioRes} dangerous={true} />
     </div>
   );
 }

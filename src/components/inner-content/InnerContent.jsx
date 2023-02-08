@@ -1,9 +1,9 @@
 import React from "react";
-import ImgCol from "./ImgCol";
 import Container from "../layout/Container";
 import ContentCol from "./ContentCol";
+import ImgCol from "./ImgCol";
 
-function InnerContent({ content, imgLeft, imgSrc }) {
+function InnerContent({ content, imgLeft, imgSrc, dangerous }) {
   return (
     <div className="[ innerContent ]">
       <Container
@@ -12,11 +12,11 @@ function InnerContent({ content, imgLeft, imgSrc }) {
             {imgLeft ? (
               <>
                 <ImgCol imgSrc={imgSrc} />
-                <ContentCol content={content} />
+                <ContentCol content={content} dangerous={dangerous} />
               </>
             ) : (
               <>
-                <ContentCol content={content} />
+                <ContentCol content={content} dangerous={dangerous} />
                 <ImgCol imgSrc={imgSrc} />
               </>
             )}

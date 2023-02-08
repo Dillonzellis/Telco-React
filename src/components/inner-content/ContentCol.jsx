@@ -2,7 +2,9 @@ import React from "react";
 import SecondaryHeading from "../headings/SecondaryHeading";
 import StyledList from "../StyledList";
 
-function ContentCol({ content }) {
+let dangerous = true;
+
+function ContentCol({ content, dangerous }) {
   return (
     <div className="[ content-col ]">
       <div className="grid gap-y-4">
@@ -11,11 +13,19 @@ function ContentCol({ content }) {
             {item.secondaryHeading && (
               <SecondaryHeading headingText={item.secondaryHeading} />
             )}
+            {/* (dangerous ? () : () ) */}
             {item.liItems && (
               <StyledList
-                liItems={item.liItems.map((yep) => {
-                  return <li>{yep}</li>;
-                })}
+                liItems={item.liItems.map((li) => (
+                  <li
+                    dangerouslySetInnerHTML={{
+                      __html: li.replace(
+                        /(<a.+<\/a>)/g,
+                        (_, match) => `${match}`
+                      ),
+                    }}
+                  />
+                ))}
               />
             )}
           </>
@@ -24,5 +34,4 @@ function ContentCol({ content }) {
     </div>
   );
 }
-
 export default ContentCol;
