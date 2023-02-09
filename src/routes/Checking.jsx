@@ -11,11 +11,9 @@ function Checking() {
         subheading={hero.subheading}
         headingText={hero.headingText}
         body={hero.body}
-        btnLink="#"
-        btnText="open an account"
-        imgSrc={
-          "https://dev3.growthbydesign.org/wp-content/uploads/2022/11/checking-hero.png"
-        }
+        btnText={hero.button.btnText}
+        btnLink={hero.button.btnLink}
+        imgSrc={hero.imgSrc}
       />
       {/* <InnerContent
         headingText="Great features of Telco Plus Checking Accounts!"

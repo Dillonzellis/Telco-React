@@ -4,20 +4,12 @@ import Container from "./layout/Container";
 
 import PrimaryHeading from "./headings/PrimaryHeading";
 
-function Hero({
-  headingText,
-  subheading,
-  body,
-  body2,
-  imgSrc,
-  btnText,
-  btnLink,
-}) {
+function Hero({ headingText, subheading, body, imgSrc, btnText, btnLink }) {
   return (
-    <div className="[ hero ] bg-primary-400">
+    <section className="[ hero ] bg-primary-400">
       <Container
         content={
-          <div className="grid grid-cols-2 gap-12 py-12 font-medium text-slate-50">
+          <div className="[ section-container ] grid grid-cols-2 gap-12 py-12 font-medium text-slate-50">
             <div className="[ content-col ] grid gap-y-4">
               {subheading && (
                 <div className="[ sub-wrapper ] flex items-center">
@@ -31,7 +23,6 @@ function Hero({
               )}
               <PrimaryHeading headingText={headingText} />
               {body && body.map((item) => <p>{item}</p>)}
-
               {btnText && <Button btnText={btnText} btnLink={btnLink} />}
             </div>
             <div className="[ img-col ] mx-auto">
@@ -43,7 +34,7 @@ function Hero({
           </div>
         }
       />
-    </div>
+    </section>
   );
 }
 

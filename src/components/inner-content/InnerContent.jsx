@@ -5,7 +5,7 @@ import ImgCol from "./ImgCol";
 
 function InnerContent({ content, imgLeft, imgSrc, dangerous }) {
   return (
-    <div className="[ innerContent ]">
+    <section className="[ innerContent ]">
       <Container
         content={
           <div className="grid grid-cols-2 items-center gap-12 py-12">
@@ -23,7 +23,7 @@ function InnerContent({ content, imgLeft, imgSrc, dangerous }) {
           </div>
         }
       />
-    </div>
+    </section>
   );
 }
 
