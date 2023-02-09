@@ -30,8 +30,8 @@ function Hero({
                 </div>
               )}
               <PrimaryHeading headingText={headingText} />
-              <p>{body}</p>
-              {body2 && <p>{body2}</p>}
+              {body && body.map((item) => <p>{item}</p>)}
+
               {btnText && <Button btnText={btnText} btnLink={btnLink} />}
             </div>
             <div className="[ img-col ] mx-auto">
