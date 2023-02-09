@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         primary: {
           400: "rgb(0, 101, 163)",
+          300: "rgb(48, 139, 194)",
+          200: "rgb(86, 170, 221)",
         },
         accent: {
           400: "rgb(115, 168, 0)",
@@ -23,7 +25,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
-      serif: ["'Playfair Display'", "serif"],
+      serif: ["jubilat", "serif"],
     },
   },
   plugins: [],

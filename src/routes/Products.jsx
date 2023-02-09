@@ -10,6 +10,7 @@ function Products() {
     <div className="[ products ]">
       <Header />
       <Hero
+        subheading={hero.subHeading}
         headingText={hero.headingText}
         body={hero.body}
         imgSrc={hero.imgSrc}
