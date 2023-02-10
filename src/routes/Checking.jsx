@@ -1,7 +1,8 @@
 import React from "react";
 import Hero from "../components/Hero";
+import InnerContent from "../components/inner-content/InnerContent";
 import Header from "../components/layout/Header";
-import { hero } from "../data/checking-page";
+import { feats, hero, rewards } from "../data/checking-page";
 
 function Checking() {
   return (
@@ -15,21 +16,8 @@ function Checking() {
         btnLink={hero.button.btnLink}
         imgSrc={hero.imgSrc}
       />
-      {/* <InnerContent
-        headingText="Great features of Telco Plus Checking Accounts!"
-        liItems={checkingLiItems}
-      />
-      <InnerContent
-        imgLeft={true}
-        headingText="Why Rewards Plus Checking?"
-        liItems={checkingLiItems}
-        imgSrc="https://dev3.growthbydesign.org/wp-content/uploads/2022/11/rewards-checking.png"
-      />
-      <InnerContent
-        headingText="Plus Checking"
-        liItems={checkingLiItems}
-        imgSrc="https://dev3.growthbydesign.org/wp-content/uploads/2023/01/pls-checking.jpg"
-      /> */}
+      <InnerContent content={feats} />
+      <InnerContent content={rewards} imgLeft={true} imgSrc={rewards.imgSrc} />
     </div>
   );
 }
