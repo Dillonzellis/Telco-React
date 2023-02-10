@@ -8,12 +8,10 @@ export const hero = {
     "https://dev3.growthbydesign.org/wp-content/uploads/2023/01/products-hero.png",
 };
 
-export const audioRes = [
-  {
-    secondaryHeading: "Audio Response",
-    liItems: [
-      "Audio Teller is a 24/7 service with no fees that allows you to make payments and transfers and check your account balances with just the touch of a button.",
-      "Any touch-tone phone lets you enter number codes to conduct your banking over the phone. Please contact Member Services for a PIN code to get started! Call us at <a class='text-primary-200 font-semibold' href='tel:+9037576014'>903-757-6014</a> or <a class='text-primary-200 font-semibold' href='tel:+8004183526'>800-418-3526</a>",
-    ],
-  },
-];
+export const audioRes = {
+  secondaryHeading: "Audio Response",
+  liItems: [
+    "Audio Teller is a 24/7 service with no fees that allows you to make payments and transfers and check your account balances with just the touch of a button.",
+    "Any touch-tone phone lets you enter number codes to conduct your banking over the phone. Please contact Member Services for a PIN code to get started! Call us at <a class='text-primary-200 font-semibold' href='tel:+9037576014'>903-757-6014</a> or <a class='text-primary-200 font-semibold' href='tel:+8004183526'>800-418-3526</a>",
+  ],
+};

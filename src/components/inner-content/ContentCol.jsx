@@ -8,24 +8,20 @@ function ContentCol({ content, dangerous }) {
   return (
     <div className="[ content-col ]">
       <div className="grid gap-y-4">
-        {content.map((item) => (
-          <>
-            {item.secondaryHeading && (
-              <SecondaryHeading headingText={item.secondaryHeading} />
+        {content.secondaryHeading && (
+          <SecondaryHeading headingText={content.secondaryHeading} />
+        )}
+        {content.liItems && (
+          <StyledList
+            liItems={content.liItems.map((li) =>
+              dangerous ? (
+                <li dangerouslySetInnerHTML={{ __html: li }} />
+              ) : (
+                <li>{li}</li>
+              )
             )}
-            {item.liItems && (
-              <StyledList
-                liItems={item.liItems.map((li) =>
-                  dangerous ? (
-                    <li dangerouslySetInnerHTML={{ __html: li }} />
-                  ) : (
-                    <li>{li}</li>
-                  )
-                )}
-              />
-            )}
-          </>
-        ))}
+          />
+        )}
       </div>
     </div>
   );
