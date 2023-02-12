@@ -12,21 +12,25 @@ module.exports = {
         accent: {
           400: "rgb(115, 168, 0)",
         },
+        neutral: {
+          800: "rgb(19, 20, 21)",
+          900: "rgb(2, 16, 23)",
+        },
+      },
+      container: {
+        screens: {
+          sm: "100%",
+          md: "100%",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1350px",
+        },
+      },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+        serif: ["jubilat", "serif"],
       },
     },
-    container: {
-      screens: {
-        sm: "100%",
-        md: "100%",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1350px",
-      },
-    },
-    fontFamily: {
-      sans: ["Montserrat", "sans-serif"],
-      serif: ["jubilat", "serif"],
-    },
+    plugins: [],
   },
-  plugins: [],
 };
