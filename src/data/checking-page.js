@@ -14,6 +14,7 @@ export const hero = {
 };
 
 export const feats = {
+  sectionName: "[ feats ]",
   secondaryHeading: "Great features of Telco Plus Checking Accounts! Response",
   listItems: [
     "Get paid 2 days early with Direct Deposit.*",
@@ -27,11 +28,23 @@ export const feats = {
 };
 
 export const rewards = {
+  sectionName: "[ rewards ]",
   secondaryHeading: "Why Rewards Plus Checking?",
+  tertiaryHeading:
+    "To receive the Rewards Rate, the following monthly requirements must be met:",
   listItems: [
     "Earn a higher annual percentage yield on your checking account balance with no minimum balance requirement and free Identity Fraud Protection up to $10,000.",
     "No cap on the interest you can earn!",
   ],
+  listItems2: [
+    "Receive a direct deposit of at least $250 per cycle period.",
+    "Have at least 10 point-of-sale transactions within the cycle period. ATM transactions do not count as merchant transactions.",
+    "Sign up for e-statements.",
+  ],
+  button: {
+    btnText: "open an account",
+    btnLink: "#",
+  },
   imgSrc:
     "https://dev3.growthbydesign.org/wp-content/uploads/2022/11/rewards-checking.png",
 };
