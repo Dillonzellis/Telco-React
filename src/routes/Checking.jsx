@@ -1,8 +1,11 @@
 import React from "react";
+import SecondaryHeading from "../components/headings/SecondaryHeading";
 import TertiaryHeading from "../components/headings/TertiaryHeading";
 import Hero from "../components/Hero";
-import InnerContent from "../components/inner-content/InnerContent";
+import TwoColsGrid from "../components/inner-content/TwoColsGrid";
+import Container from "../components/layout/Container";
 import Header from "../components/layout/Header";
+import StyledList from "../components/StyledList";
 import { feats, hero, rewards } from "../data/checking-page";
 
 function Checking() {
@@ -17,9 +20,22 @@ function Checking() {
         btnLink={hero.button.btnLink}
         imgSrc={hero.imgSrc}
       />
-      <InnerContent content={feats} />
-      <InnerContent content={rewards} imgLeft={true} imgSrc={rewards.imgSrc} />
-      {/* <TertiaryHeading headingText="tertiary heading" type={5} /> */}
+      <section className="[ feats inner-content ]">
+        <Container>
+          <TwoColsGrid
+            col1={
+              <>
+                <SecondaryHeading
+                  headingText={feats.secondaryHeading}
+                  type={2}
+                />
+                <StyledList listItems={feats.listItems} />
+              </>
+            }
+            col2={null}
+          />
+        </Container>
+      </section>
     </div>
   );
 }

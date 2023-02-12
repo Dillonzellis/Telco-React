@@ -15,7 +15,7 @@ export const hero = {
 
 export const feats = {
   secondaryHeading: "Great features of Telco Plus Checking Accounts! Response",
-  liItems: [
+  listItems: [
     "Get paid 2 days early with Direct Deposit.*",
     "Free Bill Pay.",
     "Overdraft Protection or No Overdraft options.",
@@ -28,7 +28,7 @@ export const feats = {
 
 export const rewards = {
   secondaryHeading: "Why Rewards Plus Checking?",
-  liItems: [
+  listItems: [
     "Earn a higher annual percentage yield on your checking account balance with no minimum balance requirement and free Identity Fraud Protection up to $10,000.",
     "No cap on the interest you can earn!",
   ],
