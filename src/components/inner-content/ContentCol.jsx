@@ -9,7 +9,7 @@ function ContentCol({ content, dangerous }) {
     <div className="[ content-col ]">
       <div className="grid gap-y-4">
         {content.secondaryHeading && (
-          <SecondaryHeading headingText={content.secondaryHeading} />
+          <SecondaryHeading headingText={content.secondaryHeading} type={2} />
         )}
         {content.liItems && (
           <StyledList

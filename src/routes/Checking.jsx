@@ -1,4 +1,5 @@
 import React from "react";
+import TertiaryHeading from "../components/headings/TertiaryHeading";
 import Hero from "../components/Hero";
 import InnerContent from "../components/inner-content/InnerContent";
 import Header from "../components/layout/Header";
@@ -18,6 +19,7 @@ function Checking() {
       />
       <InnerContent content={feats} />
       <InnerContent content={rewards} imgLeft={true} imgSrc={rewards.imgSrc} />
+      {/* <TertiaryHeading headingText="tertiary heading" type={5} /> */}
     </div>
   );
 }
