@@ -1,10 +1,14 @@
 import React from "react";
 
-function SecondaryHeading({ headingText, type }) {
+function SecondaryHeading({ headingText, type, textColor }) {
   const Component = `h${type}`;
 
   return (
-    <Component className="font-serif text-4xl font-semibold text-neutral-900">
+    <Component
+      className={`font-serif text-4xl font-semibold ${
+        textColor ? textColor : "text-neutral-900"
+      }`}
+    >
       {headingText}
     </Component>
   );

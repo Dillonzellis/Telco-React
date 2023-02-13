@@ -1,10 +1,15 @@
 import React from "react";
 
-function ImgCol({ imgSrc }) {
+function ImgCol({ imgSrc, imgAlt, imgSrcSet, imgClass }) {
   return (
     <div className="[ img-col ]">
       {imgSrc && (
-        <img className="content-shadow-left" src={imgSrc} alt="" srcset="" />
+        <img
+          className={`${imgClass} rounded-sm`}
+          src={imgSrc}
+          alt=""
+          srcset=""
+        />
       )}
     </div>
   );

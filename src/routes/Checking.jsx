@@ -8,7 +8,7 @@ import ImgCol from "../components/inner-content/ImgCol";
 
 import Header from "../components/layout/Header";
 import StyledList from "../components/StyledList";
-import { feats, hero, rewards } from "../data/checking-page";
+import { feats, hero, plus, rewards, secured } from "../data/checking-page";
 
 function Checking() {
   return (
@@ -25,6 +25,7 @@ function Checking() {
         />
       </section>
 
+      {/* FEATS */}
       <ContentSection
         sectionName={feats.sectionName}
         twoCols={true}
@@ -36,19 +37,68 @@ function Checking() {
         }
       />
 
+      {/* REWARDS */}
       <ContentSection
+        sectionName={rewards.sectionName}
         twoCols={true}
-        col1={<ImgCol imgSrc={rewards.imgSrc} />}
+        col1={<ImgCol imgSrc={rewards.imgSrc} imgClass={rewards.imgClass} />}
         col2={
           <>
             <SecondaryHeading headingText={rewards.secondaryHeading} type={2} />
             <StyledList listItems={rewards.listItems} />
-            <TertiaryHeading headingText={rewards.tertiaryHeading} />
+            <TertiaryHeading headingText={rewards.tertiaryHeading} type={3} />
             <StyledList listItems={rewards.listItems2} />
             <Button
               btnLink={rewards.button.btnLink}
               btnText={rewards.button.btnText}
             />
+          </>
+        }
+      />
+
+      {/* PLUS CHECKING */}
+      <ContentSection
+        sectionName={plus.sectionName}
+        twoCols={true}
+        col1={
+          <>
+            <SecondaryHeading headingText={plus.secondaryHeading} type={2} />
+            <StyledList listItems={plus.listItems} />
+            <SecondaryHeading headingText={plus.secondaryHeading2} type={2} />
+            <StyledList listItems={plus.listItems2} />
+            <Button
+              btnLink={plus.button.btnLink}
+              btnText={plus.button.btnText}
+            />
+          </>
+        }
+        col2={<ImgCol imgSrc={plus.imgSrc} imgClass={plus.imgClass} />}
+      />
+
+      {/* SECURED CHECKING */}
+      <ContentSection
+        sectionName={secured.sectionName}
+        accent={true}
+        twoCols={true}
+        col1={
+          <ImgCol
+            imgSrc={secured.imgs.imgSrc}
+            imgClass={secured.imgs.imgClass}
+          />
+        }
+        col2={
+          <>
+            <SecondaryHeading
+              headingText={secured.headings.secondaryHeading}
+              textColor={secured.headings.textColor}
+              type={2}
+            />
+            <div className="">{secured.body.bodyText}</div>
+            <StyledList
+              listItems={secured.listItems.items}
+              accent={secured.listItems.accent}
+            />
+            <div className="font-semibold">{secured.body.bodyText2}</div>
           </>
         }
       />
