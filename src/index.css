@@ -2,20 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* --clr-primary-100: hsl(203, 96%, 98%);
+  --clr-primary-300: hsl(203, 96%, 44%); */
+  --clr-primary-400: hsl(203, 100%, 32%);
+  /* --clr-primary-500: hsl(203, 100%, 25%); */
+  /* --clr-accent-300: hsl(79, 95%, 48%);*/
+  --clr-accent-400: hsl(79, 100%, 33%);
+  /* --clr-accent-500: hsl(79, 96%, 29%); */
+  /* --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 97%);*/
+  --clr-neutral-400: hsl(240, 2%, 64%);
+  --clr-neutral-500: hsl(240, 1%, 44%);
+  /* --clr-neutral-700: hsl(0, 0%, 25%);
+  --clr-neutral-800: hsl(210, 5%, 8%);
+  --clr-neutral-900: hsl(202, 83%, 5%); */
+}
+
 /* CUSTOM SHADOWS */
 .hero-shadow {
   box-shadow: -13px 8px 13px -2px rgba(0, 0, 0, 0.3),
-    -69px 70px 0px -53px hsl(240, 2%, 64%);
+    -69px 70px 0px -53px var(--clr-neutral-500);
   -webkit-box-shadow: -13px 8px 13px -2px rgba(0, 0, 0, 0.3),
-    -69px 70px 0px -53px hsl(240, 2%, 64%);
+    -69px 70px 0px -53px var(--clr-neutral-500);
   -moz-box-shadow: -13px 8px 13px -2px rgba(0, 0, 0, 0.3),
-    -69px 70px 0px -53px hsl(240, 2%, 64%);
+    -69px 70px 0px -53px var(--clr-neutral-500);
 }
 
 .btn-shadow {
-  box-shadow: 0 1.125em 1em -1em hsl(79, 96%, 27%);
-  -webkit-box-shadow: 0 1.125em 1em -1em hsl(79, 96%, 27%);
-  -moz-box-shadow: 0 1.125em 1em -1em hsl(79, 96%, 27%);
+  box-shadow: 0 1.125em 1em -1em var(--clr-accent-400);
+  -webkit-box-shadow: 0 1.125em 1em -1em var(--clr-accent-400);
+  -moz-box-shadow: 0 1.125em 1em -1em var(--clr-accent-400);
+}
+
+.content-shadow-left {
+  -webkit-box-shadow: 13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+    -85px -4px 0px -30px var(--clr-primary-400),
+    85px -4px 0px -30px var(--clr-primary-400);
+  -moz-box-shadow: 13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+    -85px -4px 0px -30px var(--clr-primary-400),
+    85px -4px 0px -30px var(--clr-primary-400);
+  box-shadow: 13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+    -85px -4px 0px -30px var(--clr-primary-400),
+    85px -4px 0px -30px var(--clr-primary-400);
+}
+
+@media (min-width: 48em) {
+  .content-shadow-left {
+    -webkit-box-shadow: -13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+      -100px 85px 0px -67px var(--clr-primary-400),
+      -100px -85px 0px -67px var(--clr-primary-400);
+    -moz-box-shadow: -13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+      -100px 85px 0px -67px var(--clr-primary-400),
+      -100px -85px 0px -67px var(--clr-primary-400);
+    box-shadow: -13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+      -100px 85px 0px -67px var(--clr-primary-400),
+      -100px -85px 0px -67px var(--clr-primary-400);
+  }
+}
+
+.content-shadow-right {
+  -webkit-box-shadow: 13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+    -85px -4px 0px -30px var(--clr-neutral-400),
+    85px -4px 0px -30px var(--clr-neutral-400);
+  -moz-box-shadow: 13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+    -85px -4px 0px -30px var(--clr-neutral-400),
+    85px -4px 0px -30px var(--clr-neutral-400);
+  box-shadow: 13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+    -85px -4px 0px -30px var(--clr-neutral-400),
+    85px -4px 0px -30px var(--clr-neutral-400);
+}
+
+@media (min-width: 48em) {
+  .content-shadow-right {
+    -webkit-box-shadow: 13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+      100px 85px 0px -67px var(--clr-neutral-400),
+      100px -85px 0px -67px var(--clr-neutral-400);
+    -moz-box-shadow: 13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+      100px 85px 0px -67px var(--clr-neutral-400),
+      100px -85px 0px -67px var(--clr-neutral-400);
+    box-shadow: 13px 8px 13px -2px rgba(0, 0, 0, 0.3),
+      100px 85px 0px -67px var(--clr-neutral-400),
+      100px -85px 0px -67px var(--clr-neutral-400);
+  }
+}
+
+@media (min-width: 62.5em) {
+  .lg-accent-content-shadow-right {
+    -webkit-box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.3),
+      85px 70px 0px -57px var(--clr-primary-400);
+    -moz-box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.3),
+      85px 70px 0px -57px var(--clr-primary-400);
+    box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.3),
+      85px 70px 0px -57px var(--clr-primary-400);
+  }
 }
 
 /* LISTS */

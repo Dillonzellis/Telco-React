@@ -1,9 +1,17 @@
 import React from "react";
 
-function StyledList({ liItems }) {
+function StyledList({ listItems, accent }) {
   return (
     <>
-      <ul className="styled-list ml-6 grid gap-y-2">{liItems}</ul>
+      <ul
+        className={`${
+          accent ? "styled-list-accent" : "styled-list"
+        } ml-6 grid gap-y-2`}
+      >
+        {listItems.map((li, index) => (
+          <li key={index}>{li}</li>
+        ))}
+      </ul>
     </>
   );
 }
