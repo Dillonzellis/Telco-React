@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../layout/Container";
-import TwoColsGrid from "./TwoColsGrid";
+import TwoColsGrid from "../layout/TwoColsGrid";
 
 function ContentSection({ sectionName, twoCols, col1, col2, accent }) {
   return (

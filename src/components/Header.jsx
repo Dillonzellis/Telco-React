@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Hero from "../Hero";
-import Container from "./Container";
+import Hero from "./Hero";
+import Container from "./layout/Container";
 
 function Header() {
   return (

@@ -26,7 +26,7 @@ function Hero({ headingText, subheading, body, imgSrc, btnText, btnLink }) {
           </div>
           <div className="[ img-col ] mx-auto">
             <img
-              className="hero-shadow absolute -translate-x-1/2 shadow-lg"
+              className="hero-shadow absolute -translate-x-1/2 rounded-sm"
               src={imgSrc}
             />
           </div>

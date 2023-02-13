@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "../components/Button";
+import Header from "../components/Header";
 import SecondaryHeading from "../components/headings/SecondaryHeading";
 import TertiaryHeading from "../components/headings/TertiaryHeading";
 import Hero from "../components/Hero";
 import ContentSection from "../components/inner-content/ContentSection";
 import ImgCol from "../components/inner-content/ImgCol";
 import Item from "../components/inner-content/Item";
-import Header from "../components/layout/Header";
 import StyledList from "../components/StyledList";
 
 import {
