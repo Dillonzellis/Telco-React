@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../components/Button";
 import SecondaryHeading from "../components/headings/SecondaryHeading";
 import TertiaryHeading from "../components/headings/TertiaryHeading";
 import Hero from "../components/Hero";
@@ -8,7 +9,13 @@ import Item from "../components/inner-content/Item";
 import Header from "../components/layout/Header";
 import StyledList from "../components/StyledList";
 
-import { audioRes, billPay, directDeposit, hero } from "../data/products-page";
+import {
+  audioRes,
+  billPay,
+  directDeposit,
+  hero,
+  wiring,
+} from "../data/products-page";
 
 function Products() {
   return (
@@ -123,6 +130,40 @@ function Products() {
             imgSrc={directDeposit.imgs.imgSrc}
             imgClass={directDeposit.imgs.imgClass}
           />
+        }
+      />
+
+      {/* WIRING */}
+      <ContentSection
+        sectionName={wiring.sectionName}
+        accent={true}
+        twoCols={true}
+        col1={
+          <ImgCol imgSrc={wiring.imgs.imgSrc} imgClass={wiring.imgs.imgClass} />
+        }
+        col2={
+          <>
+            <SecondaryHeading
+              headingText={wiring.headings.secondaryHeading}
+              textColor={wiring.headings.textColor}
+              type={2}
+            />
+            <p>
+              Telco Plus Credit Union offers domestic wire transfers and Western
+              Union transfers. Domestic wires can be sent the same day if
+              received in our office by 3:30 pm. Please call us if you have any
+              questions. <a href="#">903-753-5588</a>
+            </p>
+
+            <StyledList
+              listItems={wiring.listItems.items}
+              accent={wiring.listItems.accent}
+            />
+            <Button
+              btnLink={wiring.button.btnLink}
+              btnText={wiring.button.btnText}
+            />
+          </>
         }
       />
     </div>

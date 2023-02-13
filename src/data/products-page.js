@@ -123,3 +123,38 @@ export const directDeposit = {
     imgClass: "content-shadow-right",
   },
 };
+
+export const wiring = {
+  sectionName: "[ wiring ]",
+  headings: {
+    textColor: "text-white",
+    secondaryHeading: "Wiring Instructions",
+    secondaryHeading2: "",
+    secondaryHeading3: "",
+    tertiaryHeading: "To: Catalyst Federal Credit Union",
+  },
+  body: {
+    bodyText: "",
+    bodyText2: "",
+  },
+  listItems: {
+    items: [
+      "Routing/ABA# 311990511",
+      "To Credit: Telco Plus Credit Union",
+      "Fee Schedule for wiring fees",
+    ],
+    items2: [],
+    items3: [],
+    accent: true,
+    dangerous: false,
+  },
+  button: {
+    btnText: "Fee Schedule",
+    btnLink: "",
+  },
+  imgs: {
+    imgSrc:
+      "https://dev3.growthbydesign.org/wp-content/uploads/2023/01/wiring.jpg",
+    imgClass: "lg-accent-content-shadow-right",
+  },
+};
