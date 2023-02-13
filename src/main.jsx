@@ -11,10 +11,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Checking />,
   },
-  // {
-  //   path: "/products/",
-  //   element: <Products />,
-  // },
+  {
+    path: "/products/",
+    element: <Products />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
