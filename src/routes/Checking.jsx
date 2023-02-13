@@ -5,6 +5,7 @@ import TertiaryHeading from "../components/headings/TertiaryHeading";
 import Hero from "../components/Hero";
 import ContentSection from "../components/inner-content/ContentSection";
 import ImgCol from "../components/inner-content/ImgCol";
+import Item from "../components/inner-content/Item";
 
 import Header from "../components/layout/Header";
 import StyledList from "../components/StyledList";
@@ -14,6 +15,8 @@ function Checking() {
   return (
     <div className="[ checking ]">
       <Header />
+
+      {/* HERO */}
       <section className="[ hero ]">
         <Hero
           subheading={hero.subheading}
@@ -62,10 +65,15 @@ function Checking() {
         twoCols={true}
         col1={
           <>
-            <SecondaryHeading headingText={plus.secondaryHeading} type={2} />
-            <StyledList listItems={plus.listItems} />
-            <SecondaryHeading headingText={plus.secondaryHeading2} type={2} />
-            <StyledList listItems={plus.listItems2} />
+            <Item>
+              <SecondaryHeading headingText={plus.secondaryHeading} type={2} />
+              <StyledList listItems={plus.listItems} />
+            </Item>
+
+            <Item>
+              <SecondaryHeading headingText={plus.secondaryHeading2} type={2} />
+              <StyledList listItems={plus.listItems2} />
+            </Item>
             <Button
               btnLink={plus.button.btnLink}
               btnText={plus.button.btnText}
