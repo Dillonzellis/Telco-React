@@ -1,5 +1,6 @@
 import React from "react";
 import SecondaryHeading from "../components/headings/SecondaryHeading";
+import TertiaryHeading from "../components/headings/TertiaryHeading";
 import Hero from "../components/Hero";
 import ContentSection from "../components/inner-content/ContentSection";
 import ImgCol from "../components/inner-content/ImgCol";
@@ -7,14 +8,15 @@ import Item from "../components/inner-content/Item";
 import Header from "../components/layout/Header";
 import StyledList from "../components/StyledList";
 
-import { audioRes, billPay, hero } from "../data/products-page";
+import { audioRes, billPay, directDeposit, hero } from "../data/products-page";
 
 function Products() {
   return (
     <div className="[ products ]">
       <Header />
 
-      <section>
+      {/* HERO */}
+      <section className="[ hero ]">
         <Hero
           className="[ hero ]"
           subheading={hero.headings.subHeading}
@@ -63,7 +65,7 @@ function Products() {
               />
               <StyledList
                 listItems={billPay.listItems.items}
-                dangerous={true}
+                dangerous={billPay.listItems.dangerous}
               />
             </Item>
 
@@ -89,6 +91,38 @@ function Products() {
               for more information and disclosures regarding Courtesy Pay.
             </div>
           </>
+        }
+      />
+
+      {/* DIRECT DEPOSIT */}
+      <ContentSection
+        sectionName={directDeposit.sectionName}
+        twoCols={true}
+        col1={
+          <>
+            <Item>
+              <SecondaryHeading
+                headingText={directDeposit.headings.secondaryHeading}
+                type={2}
+              />
+              <StyledList listItems={directDeposit.listItems.items} />
+            </Item>
+
+            <TertiaryHeading
+              headingText={directDeposit.headings.tertiaryHeading}
+              type={3}
+            />
+            <StyledList
+              listItems={directDeposit.listItems.items2}
+              dangerous={directDeposit.listItems.dangerous}
+            />
+          </>
+        }
+        col2={
+          <ImgCol
+            imgSrc={directDeposit.imgs.imgSrc}
+            imgClass={directDeposit.imgs.imgClass}
+          />
         }
       />
     </div>

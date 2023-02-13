@@ -83,3 +83,43 @@ export const billPay = {
     imgClass: "content-shadow-left",
   },
 };
+
+export const directDeposit = {
+  sectionName: "[ directDeposit ]",
+  headings: {
+    textColor: "",
+    secondaryHeading: "Direct Deposit",
+    secondaryHeading2: "",
+    secondaryHeading3: "",
+    tertiaryHeading: "Why should you use Direct Deposit?",
+  },
+  body: {
+    bodyText: "",
+    bodyText2: "",
+  },
+  listItems: {
+    items: [
+      "You can arrange to have a portion or your whole payroll, Social Security, pension, Tax Refund, or any other recurring check deposited directly into your Telco Plus Credit Union checking account or savings account. This eliminates the possibility of misplacing your paycheck and you won’t need to make a trip to cash or deposit it.",
+      "Receive your funds early! Payroll direct deposit is paid 2 days early if the file is sent in early.",
+      "Talk to your HR department to set up direct or talk to Member Services for our Direct Deposit form.",
+    ],
+    items2: [
+      "<strong class='font-semibold'>Safe</strong> – Your paycheck is protected against loss or theft.",
+      "<strong class='font-semibold'>Worry-free</strong> – You can be assured that your check is deposited, even when you’re away from home.",
+      "<strong class='font-semibold'>Saves time</strong> – You no longer have to make special trips to the credit union or stand in line on payday.",
+      "<strong class='font-semibold'>Convenient</strong> – No more waiting for the mail. Your deposits are automatically made for you, allowing you to set your own timetable for accessing your funds.",
+    ],
+    items3: [""],
+    accent: false,
+    dangerous: true,
+  },
+  button: {
+    btnText: "",
+    btnLink: "",
+  },
+  imgs: {
+    imgSrc:
+      "https://dev3.growthbydesign.org/wp-content/uploads/2023/01/direct-deposit.jpg",
+    imgClass: "content-shadow-right",
+  },
+};

@@ -1,7 +1,7 @@
 import React from "react";
 
 function Item({ children }) {
-  return <div>{children}</div>;
+  return <div className="grid gap-y-2">{children}</div>;
 }
 
 export default Item;

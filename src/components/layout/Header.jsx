@@ -6,7 +6,7 @@ import Container from "./Container";
 function Header() {
   return (
     <Container>
-      <div className="flex gap-4 py-4">
+      <div className="[ header ] flex gap-4 py-4">
         {/* <Nav /> */}
         <Link to={`/`} className="text-xl font-bold">
           Checking
