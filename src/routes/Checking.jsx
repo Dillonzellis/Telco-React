@@ -13,7 +13,7 @@ import { feats, hero, plus, rewards, secured } from "../data/checking-page";
 function Checking() {
   return (
     <div className="[ checking ]">
-      <Header />
+   
 
       {/* HERO */}
       <section className="[ hero ]">

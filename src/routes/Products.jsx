@@ -19,8 +19,6 @@ import {
 function Products() {
   return (
     <div className="[ products ]">
-      <Header />
-
       {/* HERO */}
       <section className="[ hero ]">
         <Hero

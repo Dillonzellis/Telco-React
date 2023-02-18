@@ -9,11 +9,18 @@ import Root from "./routes/Root";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Checking />,
-  },
-  {
-    path: "/products/",
-    element: <Products />,
+    element: <Root />,
+    // errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/checking",
+        element: <Checking />,
+      },
+      {
+        path: "/products/",
+        element: <Products />,
+      },
+    ],
   },
 ]);
 
