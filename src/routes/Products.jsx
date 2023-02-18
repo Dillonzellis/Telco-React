@@ -8,7 +8,6 @@ import ContentSection from "../components/inner-content/ContentSection";
 import ImgCol from "../components/inner-content/ImgCol";
 import Item from "../components/inner-content/Item";
 import StyledList from "../components/StyledList";
-
 import {
   audioRes,
   billPay,
