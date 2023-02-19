@@ -7,8 +7,8 @@ function ImgCol({ imgSrc, imgAlt, imgSrcSet, imgClass }) {
         <img
           className={`${imgClass} rounded-sm`}
           src={imgSrc}
-          alt=""
-          srcSet=""
+          alt={imgAlt}
+          srcSet={imgSrcSet}
         />
       )}
     </div>
